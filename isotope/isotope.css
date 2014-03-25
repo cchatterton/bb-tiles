@@ -1,0 +1,261 @@
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+	z-index: 2;
+}
+.isotope-hidden.isotope-item {
+	pointer-events: none;
+	z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+
+.isotope, .isotope .isotope-item {
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+.isotope {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-ms-transition-property: height, width;
+	-o-transition-property: height, width;
+	transition-property: height, width;
+}
+.isotope .isotope-item {
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	-ms-transition-property: -ms-transform, opacity;
+	-o-transition-property: -o-transform, opacity;
+	transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+	-webkit-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	-ms-transition-duration: 0s;
+	-o-transition-duration: 0s;
+	transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+
+#container {
+	border: none;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.element {
+	width: 50%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.height1 { height: 100px; }
+.height2 { height: 150px; }
+.height3 { height: 200px; }
+.height4 { height: 250px; }
+.height5 { height: 300px; }
+.height6 { height: 350px; }
+.height7 { height: 400px; }
+.height8 { height: 450px; }
+.height9 { height: 500px; }
+
+
+.element {
+	position: absolute;
+	margin: 0;
+}
+.variable-sizes .element.width2 {
+	width: 240px;
+}
+.variable-sizes .element.width2.height2 {
+	font-size: 2.0em;
+}
+.element.large, .variable-sizes .element.large, .variable-sizes .element.large.width2.height2 {
+	font-size: 3.0em;
+	width: 350px;
+	height: 350px;
+	z-index: 100;
+}
+.clickable .element:hover {
+	cursor: pointer;
+}
+.clickable .element:hover h3 {
+	text-shadow: 0 0 10px white,  0 0 10px white;
+}
+.clickable .element:hover h2 {
+	color: white;
+}
+/* Combination filter options*/
+
+#options .option-combo {
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+#options .option-combo ul {
+	margin-right: 20px;
+	display: inline-block;
+}
+#options .option-combo h2, #options .option-combo h4 {
+	line-height: 34px;
+	margin-bottom: 0;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+/**** Sites using Isotope ****/
+
+#sites h2 {
+	display: none;
+	padding: 0.4em;
+	line-height: 32px;
+	margin-bottom: 0.4em;
+	-webkit-transition: background-color 0.8s;
+	-moz-transition: background-color 0.8s;
+	-o-transition: background-color 0.8s;
+	transition: background-color 0.8s;
+}
+#sites h2 img {
+	display: inline-block;
+	margin-right: 0.4em;
+	vertical-align: bottom;
+}
+#sites h2.loading {
+	background: white;
+	color: #222;
+}
+#sites h2.error {
+	background: red;
+	color: #222;
+}
+#sites ul {
+	margin: 0;
+}
+.super-list .example {
+	list-style: none;
+	float: left;
+	width: 230px;
+	margin: 0px;
+}
+.super-list .example a, .super-list .example b, .super-list .example img {
+	display: block;
+}
+.super-list .example img {
+	width: 100%;
+}
+.super-list .example a {
+	background: #1F1E1D;
+}
+.super-list .example a:hover {
+	background: white;
+	color: #111;
+}
+.super-list .example b {
+	font-weight: bold;
+	line-height: 1.3em;
+	padding: 3px;
+	padding-top: 8px;
+}
+.super-list .link {
+	float: left;
+	position: relative;
+	font-size: 24px;
+	line-height: 1.2em;
+	font-weight: 300;
+	margin: 5px;
+}
+.super-list .link {
+	width: 230px;
+	height: 110px;
+}
+.super-list .link a {
+	display: block;
+	padding: 10px;
+	padding-left: 65px;
+	height: 90px;
+	background: #1F1E1D;
+	color: #FE5;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	border-radius: 14px;
+}
+.super-list .link a:before {
+	content: '➔';
+	font-size: 70px;
+	position: absolute;
+	top: 30px;
+	left: 5px;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.super-list .link.away a:before {
+	top: 25px;
+	left: 0px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.super-list .link a:hover {
+	background: #E58;
+	color: white;
+}
+.super-list .feature .name {
+	bottom: auto;
+	top: 140px;
+	left: 18px;
+	font-size: 20px;
+}
+/**** Infinite Scroll ****/
+
+#infscr-loading {
+	position: fixed;
+	text-align: center;
+	bottom: 30px;
+	left: 42%;
+	z-index: 100;
+	background: white;
+	background: hsla( 0, 0%, 100%, 0.9 );
+	padding: 20px;
+	color: #222;
+	font-size: 15px;
+	font-weight: bold;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+/* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
